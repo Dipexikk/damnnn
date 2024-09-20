@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zobrazení obrázku se seznamem</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Vlož název a URL obrázku</h2>
+            <input type="text" id="imageName" placeholder="Zadej název obrázku">
+            <input type="text" id="imageUrl" placeholder="Zadej URL obrázku">
+            <button onclick="showImage()">Zobraz obrázek</button>
+            <div id="imageContainer">
+                <div class="image-box">
+                    <img id="image" src="" alt="Zde se zobrazí obrázek">
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <h3>Seznam zobrazených obrázků</h3>
+            <ul id="imageList"></ul>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
